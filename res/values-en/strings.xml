@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Reembolso Fácil v 0.8 beta</string>
+    <string name="about_old">Developed by it4biz.com.br and 4droiders.com. More information about the application and the web version are reembolsofacil.com.br. Questions and suggestions please contact us by email reembolsofacil@gmail.comreemb_arr_alimentacao</string>
+    <string name="about_old2">More information about the application and the web version are reembolsofacil.com.br.</string>
+    <string name="about">ReembolsoFácil is a distribution of the Travel and Reimbursement Manager. To learn more about the corporate version http://www.reembolsofacil.com.br visit our website or send an email to reembolsofacil@it4biz.com.br. Copyright © 2010 - 2011 Caio Moreno de Souza, Fausto Koga.</string>
+    <!-- view_main.xml -->
+    <string name="vmain_detalhes_gastos">Expenditure details</string>
+    <string name="vmain_descricao">Description</string>
+    <string name="vmain_valor">Value</string>
+    <string name="vmain_tipo">Type</string>
+    <string name="vmain_data">Date</string>
+    <string name="vmain_viagem">Travel</string>
+    <string name="vmain_env_despesa">Save</string>
+    <string name="vmain_exc_despesa">Delete</string>
+    <string name="vmain_cancelar">Cancel</string>
+    <!-- view_viagem.xml -->
+    <string name="vviagem_preencha"> Travel Data</string>
+    <string name="vviagem_motivo">Reason</string>
+    <string name="vviagem_dt_inicio">Start</string>
+    <string name="vviagem_dt_fim">Return</string>
+    <string name="vviagem_aberta">Open</string>
+    <string name="vviagem_adiantamento">Advance</string>
+    <string name="vviagem_env_viagem">Save</string>
+    <string name="vviagem_exc_viagem">Delete</string>
+    <string name="vviagem_cancelar">Cancel</string>
+    <!-- DespesasActivity.java -->
+    <string name="despact_nao_ha_despesas">There are no expenses registered</string>
+    <string name="despact_carregando">Loading</string>
+    <string name="despact_buscando">Searching your expenses, wait...</string>
+    <string name="despact_editar">Edit</string>
+    <string name="despact_para_editar">To edit expenses, the travel needs to be open</string>
+    <string name="despact_ok">OK</string>
+    <string name="despact_despesa">Expense</string>
+    <string name="despact_data">Date</string>
+    <string name="despact_tipo">Type</string>
+    <string name="despact_valor">Value</string>
+    <string name="despact_descricao">Description</string>
+    <!-- ReembolsoFacilFree.java -->
+    <string name="reemb_viagens">Travel</string>
+    <string name="reemb_sobre">About</string>
+    <string name="reemb_sair">Exit</string>
+    <string name="reemb_msg_sobre">About</string>
+    <string name="reemb_saindo">Exiting</string>
+    <string name="reemb_confirmacao">Confirmation</string>
+    <string name="reemb_confirma">Confirms deletion of expense?</string>
+    <string name="reemb_ok">OK</string>
+    <string name="reemb_excluindo">Deleting</string>
+    <string name="reemb_excluindo_aguarde">Deleting expenses, wait...</string>
+    <string name="reemb_cancelar">Cancel</string>
+    <string name="reemb_sincronizando">Synchronizing</string>
+    <string name="reemb_carregando">Loading your travels, please wait...</string>
+    <string name="reemb_aviso">Warning</string>
+    <string name="reemb_nao_possui_viagens">You have no travel, to register go to menu -&amp;gt; Travel -&amp;gt; menu -&amp;gt; register</string>
+    <string name="reemb_ok2">OK</string>
+    <string name="reemb_preencha_valor">Fill the value</string>
+    <string name="reemb_enviando">Sending</string>
+    <string name="reemb_enviando_despesa">Sending your expense, wait</string>
+    <string name="reemb_adicionar">Add</string>
+    <string name="reemb_dateformat">MM/dd/yyyy</string>
+    <string-array name="reemb_tipoDespesa">
+        <item>FOOD</item>
+        <item>TAXI</item>
+        <item>HOTEL</item>
+        <item>BUS</item>
+        <item>TOOL</item>
+        <item>FUEL</item>
+        <item>CAR RENTAL</item>
+        <item>AIR TICKET</item>
+        <item>PARKING</item>
+        <item>LAUNDRY</item>
+        <item>OTHER</item>
+    </string-array>
+    <string name="reemb_decimalDigits">0123456789.</string>
+    <string name="reemb_to">to</string>
+    <string name="confirmacao">Confirmation</string>
+    <string name="confirmaExcluirViagem">Really delete this trip and all your expenses?</string>
+    <string name="excluindo">Deleting</string>
+    <string name="excluindoViagem">Excluding travel, wait</string>
+    <string name="cancelar">Cancel</string>
+    <string name="viagemExcluida">Travel deleted</string>
+    <string name="enviando">Sending</string>
+    <string name="enviandoViagem">Sending travel, wait</string>
+    <string name="informeTodosCampos">Complete all fields</string>
+    <string name="despesaExcluida">Expense deleted</string>
+    <string name="despesaSalva">Expenses saved</string>
+    <string name="impossivelGravarSD">Can not save to the SD card, check and try again</string>
+    <string name="exportadoSucesso">Successfully exported</string>
+    <string name="impossivelExportar">Unable to export</string>
+    <string name="naoHaViagem">No travel registered</string>
+    <string name="carregando">Loading</string>
+    <string name="carregandoViagens">Loading your travels, please wait</string>
+    <string name="avisoExportacaoCSV">Data from this travel will be exported to your SD card, folder reembolsoFacilFree csv format. They continue to exist even after you remove the application. You can open it in a spreadsheet or in a common text editor.</string>
+    <string name="exportar">Export</string>
+    <string name="confirmar">Confirm</string>
+    <string name="exportando">Exporting</string>
+    <string name="exportandoDespesas">Exporting expenses, wait</string>
+    <string name="editar">Edit</string>
+    <string name="totalDespesa">Expenses</string>
+    <string name="restante">Balance</string>
+    <string name="exportAlert">Data from this trip will be exported to your SD card, folder ReembolsoFacil csv format. The data could be opened in a spreadsheet.</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Reembolso Fácil v 0.8 beta</string>
+    <string name="about_old">Desarrollado por it4biz.com.br y 4droiders.com. Más información sobre la aplicación y la versión web son reembolsofacil.com.br. Preguntas y sugerencias, por favor contacte con nosotros por correo electrónico reembolsofacil@gmail.com</string>
+    <string name="about_old2">Más información sobre la aplicación y la versión web son reembolsofacil.com.br.</string>
+    <string name="about">ReembolsoFácil es una distribución de los viajes y el Administrador de reembolso. Para obtener más información acerca de la versión corporativa http://www.reembolsofacil.com.br visite nuestro sitio web o enviar un correo electrónico a reembolsofacil@it4biz.com.br. Copyright © 2010 - 2011 Caio Moreno de Souza, Koga Fausto.</string>
+    <!-- view_main.xml -->
+    <string name="vmain_detalhes_gastos">Detalles de los gastos </string>
+    <string name="vmain_descricao">Descripción</string>
+    <string name="vmain_valor">Valor</string>
+    <string name="vmain_tipo">Tipo</string>
+    <string name="vmain_data">Fecha</string>
+    <string name="vmain_viagem">Viaje</string>
+    <string name="vmain_env_despesa">Guardar</string>
+    <string name="vmain_exc_despesa">Eliminar</string>
+    <string name="vmain_cancelar">Cancelar</string>
+    <!-- view_viagem.xml -->
+    <string name="vviagem_preencha">Datos del viaje </string>
+    <string name="vviagem_motivo">Motivo</string>
+    <string name="vviagem_dt_inicio">Início</string>
+    <string name="vviagem_dt_fim">Regreso</string>
+    <string name="vviagem_aberta">Abierta</string>
+    <string name="vviagem_adiantamento">Adelantos</string>
+    <string name="vviagem_env_viagem">Guardar</string>
+    <string name="vviagem_exc_viagem">Eliminar</string>
+    <string name="vviagem_cancelar">Cancelar</string>
+    <!-- DespesasActivity.java -->
+    <string name="despact_nao_ha_despesas">Ningún gasto registrados</string>
+    <string name="despact_carregando">Cargando</string>
+    <string name="despact_buscando">Buscando sus gastos, por favor espere ...</string>
+    <string name="despact_editar">Editar</string>
+    <string name="despact_para_editar">Para editar gastos, el viaje debe ser abierto</string>
+    <string name="despact_ok">OK</string>
+    <string name="despact_despesa">Gasto</string>
+    <string name="despact_data">Fecha</string>
+    <string name="despact_tipo">Tipo</string>
+    <string name="despact_valor">Valor</string>
+    <string name="despact_descricao">Descripción</string>
+    <!-- ReembolsoFacilFree.java -->
+    <string name="reemb_viagens">Viaje</string>
+    <string name="reemb_sobre">Acerca</string>
+    <string name="reemb_sair">Salir</string>
+    <string name="reemb_msg_sobre">Acerca</string>
+    <string name="reemb_saindo">Saliendo</string>
+    <string name="reemb_confirmacao">Confirmación</string>
+    <string name="reemb_confirma">Confirma la exclusión de este gastos?</string>
+    <string name="reemb_ok">OK</string>
+    <string name="reemb_excluindo">Excluyendo</string>
+    <string name="reemb_excluindo_aguarde">Excluyendo los gastos, espere ...</string>
+    <string name="reemb_cancelar">Cancelar</string>
+    <string name="reemb_sincronizando">Sincronización</string>
+    <string name="reemb_carregando">Cargando sus viajes, por favor espere ...</string>
+    <string name="reemb_aviso">Aviso</string>
+    <string name="reemb_nao_possui_viagens">Usted no tiene viajes, para registrar ir al menú - Viajes&amp;gt; - Menú -&amp;gt;registrar</string>
+    <string name="reemb_ok2">OK</string>
+    <string name="reemb_preencha_valor">Complete el valor</string>
+    <string name="reemb_enviando">Enviando</string>
+    <string name="reemb_enviando_despesa">Enviando su gasto, por favor espere</string>
+    <string name="reemb_adicionar">Agregar</string>
+    <string name="reemb_dateformat">dd/MM/yyyy</string>
+    <string-array name="reemb_tipoDespesa">
+        <item>ALIMENTACIÓN</item>
+        <item>TAXI</item>
+        <item>HOTEL</item>
+        <item>AUTOBUS</item>
+        <item>PEAJE</item>
+        <item>COMBUSTIBLE</item>
+        <item>ALQUILER DE AUTOS</item>
+        <item>BILLETE DE AVIÓN</item>
+        <item>ESTACIONAMIENTO</item>
+        <item>OTROS</item>
+        <item>OTROS</item>
+    </string-array>
+    <string name="reemb_decimalDigits">0123456789,.</string>
+    <string name="reemb_to">a</string>
+    <string name="confirmacao">Confirmación</string>
+    <string name="confirmaExcluirViagem">¿Desea borrar este viaje y todos sus gastos?</string>
+    <string name="excluindo">Excluyendo</string>
+    <string name="excluindoViagem">Excluido el viaje, espere</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="viagemEnviada">Viajes publicado</string>
+    <string name="viagemExcluida">Viajes eliminado</string>
+    <string name="enviando">Enviando</string>
+    <string name="enviandoViagem">Enviando viaje, espere</string>
+    <string name="informeTodosCampos">Rellene todos los campos</string>
+    <string name="despesaExcluida">Gastos excluidos</string>
+    <string name="despesaSalva">Gasto registrado</string>
+    <string name="impossivelGravarSD">No se puede guardar en la tarjeta SD, visita y vuelva a intentarlo</string>
+    <string name="exportadoSucesso">Exportado con éxito</string>
+    <string name="impossivelExportar">No se puede exportar</string>
+    <string name="naoHaViagem">No hay resultados de viajes</string>
+    <string name="carregando">Cargando</string>
+    <string name="carregandoViagens">Cargando sus viajes, por favor espere</string>
+    <string name="avisoExportacaoCSV">Los datos de este viaje será exportado a la tarjeta SD, reembolsoFacilFree carpeta formato csv. Siguen existiendo incluso después de quitar la aplicación. Usted puede abrir en una hoja de cálculo o un editor de texto común.</string>
+    <string name="exportar">Exportar</string>
+    <string name="confirmar">Confirme</string>
+    <string name="exportando">Exportando</string>
+    <string name="exportandoDespesas">Exportando despesas, aguarde</string>
+    <string name="editar">Editar</string>
+    <string name="totalDespesa">Gastos</string>
+    <string name="restante">Balance</string>
+    <string name="exportAlert">Los datos de este viaje será exportado a la tarjeta SD, una carpeta formato csv ReembolsoFacil. Los datos se podría abrir en una hoja de cálculo.</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	          android:orientation="vertical" 
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent" 
+	          android:scrollbars="vertical">
+	          
+    <LinearLayout style="@style/TitleBar"> 
+        <ImageView style="@style/TitleBarLogo"
+                   android:contentDescription="DESCRIPTION LOGO"
+                   android:src="@drawable/refund" />
+		<TextView android:id="@+id/textView1" 
+		          android:text="@string/reemb_viagens" 
+		          style="@style/TitleBarFont"
+		          android:layout_toRightOf="@+id/refundIco" 
+		          android:layout_alignTop="@+id/refundIco" 
+		          android:layout_alignBottom="@+id/refundIco" 
+		          android:gravity="bottom"
+		          android:padding="3sp" 
+		          android:layout_gravity="center"/>
+        <View style="@style/TitleBarSpring" />
+        <!--
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+                     android:id="@+id/btn_title_refresh"
+                     android:contentDescription="REFRESH IT"
+                     android:src="@drawable/ic_title_refresh"
+                     android:onClick="onActionBarButtonClick" />
+        <ProgressBar style="@style/TitleBarProgressIndicator"
+                     android:id="@+id/title_refresh_progress"
+                     android:visibility="gone" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+                     android:contentDescription="SEARCH IT"
+                     android:src="@drawable/ic_title_search"
+                     android:onClick="onActionBarButtonClick" />
+    	-->
+    </LinearLayout>
+	<LinearLayout android:id="@+id/linLayout1"
+		          android:layout_width="fill_parent" 
+		          android:layout_height="fill_parent" 
+		          android:orientation="vertical">
+		<ListView android:id="@+id/listViewViagens" 
+			      android:layout_width="fill_parent" 
+			      android:layout_height="fill_parent"/>
+	</LinearLayout>
+</LinearLayout>

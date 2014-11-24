@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="br.com.reembolsofacil.free"
+      android:versionCode="2" android:versionName="2.0">
+    <application android:icon="@drawable/refund" 
+                 android:label="@string/app_name"
+                 android:theme="@style/Theme.IOSched">
+                 
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<uses-permission android:name="android.permission.GET_ACCOUNTS" /> 
+		
+        <activity android:name=".ReembolsoFacilFree"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation"
+        	      android:launchMode="singleTask"><!--usado junto com Intent.FLAG_ACTIVITY_CLEAR_TOP-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name="DespesasActivity" android:label="Despesas" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:name="ViagensActivity" android:label="Viagens" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:name="ViagemActivity" android:label="Viagem" android:configChanges="keyboardHidden|orientation"/>
+		
+		<!-- The application's publisher ID assigned by AdMob --> 
+		<meta-data android:value="a14d18adcb49d5f" android:name="ADMOB_PUBLISHER_ID" /> 
+		         
+		<!-- AdMobActivity definition --> 
+		<activity android:name="com.admob.android.ads.AdMobActivity"  
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		android:configChanges="orientation|keyboard|keyboardHidden" /> 
+		 
+		<!-- Track Market installs -->           
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver" 
+		android:exported="true"> 
+		 <intent-filter> 
+		   <action android:name="com.android.vending.INSTALL_REFERRER" /> 
+		 </intent-filter> 
+		</receiver>
+		 
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+</manifest> 

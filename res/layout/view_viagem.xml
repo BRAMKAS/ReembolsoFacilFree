@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	          android:orientation="vertical" 
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent" android:layout_gravity="center_vertical">
+	          
+    <LinearLayout style="@style/TitleBar"> 
+        <ImageView style="@style/TitleBarLogo"
+                   android:contentDescription="DESCRIPTION LOGO"
+                   android:src="@drawable/refund" />
+		<TextView android:id="@+id/textView1" 
+		          android:text="@string/vmain_viagem" 
+		          style="@style/TitleBarFont"
+		          android:layout_toRightOf="@+id/refundIco" 
+		          android:layout_alignTop="@+id/refundIco" 
+		          android:layout_alignBottom="@+id/refundIco" 
+		          android:gravity="bottom"
+		          android:padding="3sp" 
+		          android:layout_gravity="center"/>
+        <View style="@style/TitleBarSpring" />
+        <ImageView style="@style/TitleBarSeparator" />
+        
+        <ImageButton style="@style/TitleBarAction"
+                     android:id="@+id/btn_export"
+                     android:src="@drawable/ic_export"
+                     android:onClick="onExportButtonClick"/>
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+                     android:id="@+id/btn_despesas"
+                     android:contentDescription="Despesas"
+                     android:src="@drawable/ic_index_cards"
+                     android:onClick="onDespesasButtonClick" />
+    </LinearLayout>
+	<ScrollView android:id="@+id/scrollView01"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+		        android:layout_alignParentTop="true"
+		        android:padding="3sp">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			          android:orientation="vertical" 
+			          android:layout_width="fill_parent"
+			          android:layout_height="wrap_content">
+			          
+			<TextView style="@style/TitleFont.Medium"
+			          android:text="@string/vviagem_motivo"
+			          android:id="@+id/txtMotivo"/>
+			<EditText android:id="@+id/editTextMotivo"
+			          android:layout_width="fill_parent"
+				      android:layout_height="wrap_content"
+				      android:hint="@string/vviagem_motivo" />
+				      
+			<LinearLayout android:id="@+id/linLayoutButtons"
+				          android:layout_width="fill_parent" 
+				          android:layout_height="fill_parent"
+				          android:orientation="horizontal">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					          android:orientation="vertical" 
+					          android:layout_width="fill_parent"
+					          android:layout_height="fill_parent"
+					      	  android:layout_weight="0.5">
+					<TextView style="@style/TitleFont.Medium"
+			                  android:text="@string/vviagem_dt_inicio"
+						      android:id="@+id/txtDataInicio"/>
+					<Button android:id="@+id/btnDtInicio" 
+						    android:layout_width="fill_parent" 
+					        android:layout_height="wrap_content" />
+				</LinearLayout>
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					          android:orientation="vertical" 
+					          android:layout_width="fill_parent"
+					          android:layout_height="fill_parent"
+					          android:layout_weight="0.5">
+					<TextView style="@style/TitleFont.Medium"
+					          android:text="@string/vviagem_dt_fim"
+						      android:id="@+id/txtDataFim"/>
+					<Button android:id="@+id/btnDtFim"
+						    android:layout_width="fill_parent" 
+					        android:layout_height="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+			<CheckBox android:id="@+id/chkBxAberta"
+				      android:layout_width="fill_parent" 
+				      android:layout_marginRight="20dip" 
+				      android:scrollHorizontally="true"
+				      android:layout_height="wrap_content" 
+				      android:checked="true"
+				      android:text="@string/vviagem_aberta"/>
+				      
+			<TextView style="@style/TitleFont.Medium"
+			          android:text="@string/vviagem_adiantamento"
+			          android:id="@+id/txtAdiantamento"/>
+			<EditText android:text="" 
+			          android:id="@+id/editTextAdiantamento"
+			          android:layout_width="fill_parent"
+				      android:layout_height="wrap_content"
+   					  android:digits="@string/reemb_decimalDigits"
+  					  android:inputType="numberDecimal"
+				      android:hint="@string/vviagem_adiantamento"/>
+			<LinearLayout android:id="@+id/linResumo"
+			              android:layout_width="fill_parent" 
+			              android:layout_height="wrap_content"
+			              android:orientation="vertical"
+			              android:visibility="invisible">
+				<TextView style="@style/TitleFont.Medium"
+				          android:text="@string/totalDespesa"
+				          android:id="@+id/txtTotalDespesa"/>
+				<EditText android:text="" 
+				          android:id="@+id/editTextTotalDespesa"
+				          android:layout_width="fill_parent"
+					      android:layout_height="wrap_content"
+	   					  android:digits="@string/reemb_decimalDigits"
+	  					  android:inputType="numberDecimal"
+	  					  android:enabled="false"/>
+	  					  
+				<TextView style="@style/TitleFont.Medium"
+				          android:text="@string/restante"
+				          android:id="@+id/txtSaldo"/>
+				<EditText android:text="" 
+				          android:id="@+id/editTextSaldo"
+				          android:layout_width="fill_parent"
+					      android:layout_height="wrap_content"
+	   					  android:digits="@string/reemb_decimalDigits"
+	  					  android:inputType="numberDecimal"
+	  					  android:enabled="false"/>
+	  		</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:id="@+id/linLayoutSpacer"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+	              android:orientation="vertical"
+	              android:background="@color/GRAY"
+	              android:padding="3sp">
+			<LinearLayout android:id="@+id/linLayoutButtons"
+				          android:layout_width="fill_parent" 
+				          android:layout_height="fill_parent"
+				          android:orientation="horizontal">
+				<Button android:text="@string/vviagem_env_viagem" 
+				        android:id="@+id/btnSendViagem"
+					    android:layout_width="0sp" 
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center"
+					    android:layout_weight="0.3"
+                        android:onClick="onSaveViagemClick"/>
+				<Button android:text="@string/vviagem_exc_viagem"
+					    android:id="@+id/btnExcluirViagem" 
+					    android:layout_width="0sp"
+					    android:layout_height="wrap_content" 
+					    android:layout_gravity="center"
+					    android:layout_weight="0.3"
+			            android:enabled="false"
+                        android:onClick="onDeleteViagemClick"/>
+				<Button android:text="@string/vviagem_cancelar" 
+				        android:id="@+id/btnCancelar"
+					    android:layout_width="0sp" 
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center"
+					    android:layout_weight="0.3"
+			            android:enabled="false"
+                        android:onClick="onCancelViagemClick"/>
+			</LinearLayout>
+	</LinearLayout>
+	
+	<!--
+	<LinearLayout android:id="@+id/buttons"
+		          android:orientation="horizontal" 
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" 
+		          android:layout_alignParentBottom="true">
+
+		<com.admob.android.ads.AdView android:id="@+id/ad"
+			                          android:layout_width="fill_parent" 
+			                          android:layout_height="wrap_content"/>
+	</LinearLayout>
+	-->
+	
+</LinearLayout>
