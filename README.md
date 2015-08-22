@@ -30,5 +30,5 @@ http://www.techtudo.com.br/tudo-sobre/reembolso-facil.html
 https://twitter.com/reembolsofacil
 
 ##Credits:
-Caio Moreno de Souza (twitter: @caiomsouza)
-Fausto Koga
+Caio Moreno de Souza (twitter: @caiomsouza)<BR>
+Fausto Koga<BR>
