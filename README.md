@@ -32,3 +32,5 @@ https://twitter.com/reembolsofacil
 ##Credits:
 Caio Moreno de Souza (twitter: @caiomsouza)<BR>
 Fausto Koga<BR>
+
+We need help of people to help us code the app.
